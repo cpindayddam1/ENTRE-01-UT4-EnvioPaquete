@@ -2,7 +2,7 @@
 /**
  *  Representa una dimensión
  *  
- *  @author - 
+ *  @author - Christhoper Pinday Delgado
  */
 public class Dimension  
 {
