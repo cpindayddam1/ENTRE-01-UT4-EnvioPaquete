@@ -40,8 +40,8 @@ public class Paquete
      * 
      */
     public Paquete(Dimension dimension, double peso)    {
-        //TODO
-
+        this.dimension = new Dimension(dimension.getAlto(), dimension.getAncho(), dimension.getLargo());
+        this.peso = peso;
     }
 
     /**
