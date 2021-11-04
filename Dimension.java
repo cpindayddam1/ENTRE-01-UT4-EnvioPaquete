@@ -17,7 +17,6 @@ public class Dimension
         this.alto = alto;
         this.ancho = ancho;
         this.largo = largo;
-
     }   
 
     /**
@@ -45,9 +44,7 @@ public class Dimension
      * Devuelve una copia exacta al objeto actual
      */
     public Dimension obtenerCopia() {
-        //TODO
-        return null;
-
+        return new Dimension(alto, ancho, largo);
     }
 
     /**
