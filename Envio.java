@@ -80,9 +80,20 @@ public class Envio
      * si se añade como primero, segundo o tercero (no han de quedar huecos)
      */
     public void addPaquete(Paquete paquete) {
-       //TODO
-        
-
+        if(getNumeroPaquetes() == 3){
+           System.out.println("No se admiten más paquetes en el envío");
+       }
+       else{
+           if(paquete1 == null){
+               paquete1 = paquete;
+           }
+           else if(paquete2 == null){
+               paquete2 = paquete;
+           }
+           else if(paquete3 == null){
+               paquete3 = paquete;
+           }
+       }
     }
 
     /**
