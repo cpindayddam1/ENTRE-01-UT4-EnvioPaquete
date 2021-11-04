@@ -82,9 +82,14 @@ public class Paquete
      *      
      */
     public double calcularPesoFacturable() {
-        //TODO
-       return 0;
-
+       double mayor;
+        if(calcularPesoVolumetrico() > peso){
+            mayor = calcularPesoVolumetrico();
+        }
+        else{
+            mayor = peso;
+        }
+        return mayor;
     }
 
 
