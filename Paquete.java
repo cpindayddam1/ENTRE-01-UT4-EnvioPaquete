@@ -29,8 +29,9 @@ public class Paquete
      *  Se crea aquí el generador
      */
     public Paquete(double alto, double ancho, double largo)    {
-        //TODO
-
+        generador = new Random();
+        dimension = new Dimension(alto, ancho, largo);
+        peso = generador.nextInt(7) + 2;
     }
 
     /**
