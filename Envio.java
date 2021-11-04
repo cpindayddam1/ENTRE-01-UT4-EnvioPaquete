@@ -69,9 +69,7 @@ public class Envio
      * (tiene exactamente 3 paquetes)
      */
     public boolean envioCompleto() {
-       //TODO
-       return false;
-
+        return this.getNumeroPaquetes() == 3;
     }
 
     /**
