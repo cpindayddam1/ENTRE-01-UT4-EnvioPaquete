@@ -129,8 +129,19 @@ public class Envio
      * (leer enunciado)
      */
     public String toString() {
-       //TODO
-       return null;
+        String costeTotal = "Coste total del envio: ";
+        String resul = "Nº de paquetes: " + this.getNumeroPaquetes() + "\n";
+        if(paquete1 != null){
+            resul += paquete1.toString() + "\n";
+        }
+        if(paquete2 != null){
+            resul += paquete2.toString() + "\n";
+        }
+        if(paquete3 != null){
+            resul += paquete3.toString() + "\n";
+        }
+        resul += String.format("%20s %10.2f€\n", costeTotal, calcularCosteTotalEnvio());
+        return resul;
     }
 
     /**
