@@ -52,9 +52,11 @@ public class Dimension
      * (leer enunciado)
      */
     public String toString() {
-        //TODO
-        return null;
-
+        String resul = "";
+        resul += String.format("%20s %10.2f(cm)\n", "Alto: ", alto);
+        resul += String.format("%20s %10.2f(cm)\n", "Ancho: ", ancho);
+        resul += String.format("%20s %10.2f(cm)\n", "Largo: ", largo);
+        return resul;
     }
 
     /**
