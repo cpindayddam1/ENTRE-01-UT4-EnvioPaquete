@@ -108,9 +108,19 @@ public class Envio
      *  
      */
     public double calcularCosteTotalEnvio() {
-        //TODO
-       return 0;
-
+        double pesoTotal = 0;
+        double costeTotal = 0;
+        if(paquete1 != null){
+            pesoTotal += paquete1.calcularPesoFacturable();
+        }
+        if(paquete2 != null){
+            pesoTotal += paquete2.calcularPesoFacturable();
+        }
+        if(paquete3 != null){
+            pesoTotal += paquete3.calcularPesoFacturable();
+        }
+        costeTotal = Math.ceil(pesoTotal) * PRECIO_KILO;
+        return costeTotal;
     }
 
     /**
