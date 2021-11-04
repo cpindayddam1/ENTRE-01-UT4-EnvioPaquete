@@ -23,7 +23,6 @@ public class Envio
         this.paquete1 = null;
         this.paquete2 = null;
         this.paquete3 = null;
-
     }
 
     /**
@@ -31,7 +30,6 @@ public class Envio
      */
     public Paquete getPaquete1() {
         return paquete1;
-
     }
 
     /**
@@ -39,7 +37,6 @@ public class Envio
      */
     public Paquete getPaquete2() {
         return paquete2;
-
     }
 
     /**
@@ -47,7 +44,6 @@ public class Envio
      */
     public Paquete getPaquete3() {
         return paquete3;
-
     }
 
     /**
@@ -55,9 +51,17 @@ public class Envio
      * (dependerá de cuántos paquetes estén a null)
      */
     public int getNumeroPaquetes() {
-        //TODO
-       return 0;
-
+       int numero = 3; //[0 - 3]
+       if(paquete1 == null){
+         numero--;
+       }
+       if(paquete2 == null){
+           numero--;
+       }
+       if(paquete3 == null){
+           numero--;
+       }
+       return numero;
     }
 
     /**
