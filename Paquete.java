@@ -65,9 +65,7 @@ public class Paquete
      * El volumen = alto x ancho x largo
      */
     public double calcularVolumen() {
-       //TODO
-       return 0;
-
+       return dimension.getAlto() * dimension.getAncho() * dimension.getLargo();
     }
 
     /**
