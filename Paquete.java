@@ -107,9 +107,12 @@ public class Paquete
      *  (leer enunciado)
      */
     public String toString() {
-        //TODO
-       return null;
-
+        String resul = "";
+        resul += String.format("%20s\n", "Descripción del paquete: ");
+        resul += dimension.toString();
+        resul += String.format("%20s %10.2f(cm3)\n", "Volumen: ", calcularVolumen());
+        resul += String.format("%20s %10.2f(kg)\n", "Peso volumétrico: ", calcularPesoVolumetrico());
+        return resul;
     }
     
     /**
